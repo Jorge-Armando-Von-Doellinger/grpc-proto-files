@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-import "google/protobuf/empty.proto";    
+import "google/protobuf/empty.proto";     
 
 option csharp_namespace = "OmniSphere.Products.Grpc";
 
@@ -24,12 +24,13 @@ message ProductName{
     string productName = 1;
 }
 message ProductProtoModel {
-    string productName = 1;
-    string productEanCode = 2;
-    string productDescription = 3;
-    double productPrice = 4;
-    string categoryName = 5;
-    int32 quantity = 6;
+    string id = 1;
+    string productName = 2;
+    string productEanCode = 3;
+    string productDescription = 4;
+    double productPrice = 5;
+    string categoryName = 6;
+    int32 quantity = 7;
 }
     
 message GetListProductProtoModel {
